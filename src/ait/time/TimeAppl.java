@@ -81,7 +81,7 @@ public class TimeAppl {
         date = gagarin.format(df);
         System.out.println(date);
         date = "31/10/2023";
-        df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        df = DateTimeFormatter.ofPattern("dd/MMM/yyyy");
         newDate = LocalDate.parse(date,df);//дата и формат если стринг попадает под этот шаблон
         System.out.println(newDate.toString());
         System.out.println(newDate.format(DateTimeFormatter.ofPattern("dd/MMMM/yyyy")));
